@@ -1,0 +1,32 @@
+.sectionVR {
+  position: relative;
+  margin-block: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.sectionVR__image {
+  width: 65%;
+}
+
+.sectionVR__text-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 50%;
+  background: white;
+  padding-top: 5rem;
+  padding-left: 5rem;
+}
+
+.sectionVR__header {
+  font-size: clamp(2rem, calc(0.16rem + 2.5vw), 4rem);
+  margin-bottom: 1.5rem;
+}
+
+.sectionVR__text {
+  margin: 0;
+  color: var(--very-dark-gray);
+  line-height: 1.5em;
+}

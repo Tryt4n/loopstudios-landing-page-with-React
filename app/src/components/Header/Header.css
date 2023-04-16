@@ -1,0 +1,32 @@
+body {
+  position: relative;
+  max-width: 100dvw;
+}
+
+.header {
+  --navbar-height: 49px;
+  --header-height: 100dvh;
+}
+
+.header__background-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  z-index: -1;
+  height: var(--header-height);
+}
+
+.header-container {
+  color: var(--white);
+  font-size: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: calc(var(--header-height) - var(--navbar-height));
+}
+
+.header-container__header {
+  max-width: 40rem;
+  border: 1px solid var(--white);
+  padding: 1rem;
+}

@@ -1,0 +1,85 @@
+.creations {
+  margin-bottom: 7.5rem;
+}
+
+.creations__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.creations__header {
+  font-size: 2rem;
+}
+
+.creations__btn {
+  all: unset;
+  cursor: pointer;
+  background: var(--white);
+  border: 1px solid var(--black);
+  padding: 0.5em 2em;
+  font-size: 1rem;
+  line-height: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: var(--main-transition);
+}
+
+.creations__btn:where(:hover, :focus-visible) {
+  background: var(--black);
+  color: var(--white);
+}
+
+.creations-grid {
+  --gap-size: 1.5rem;
+
+  display: grid;
+  grid-template-columns: repeat(4, calc((100% - (3 * var(--gap-size))) / 4));
+  grid-template-rows: 1fr 1fr;
+  place-content: space-between;
+  gap: var(--gap-size);
+}
+
+.creations-grid__header {
+  position: absolute;
+  bottom: 0;
+  font-size: clamp(1.5rem, calc(0.16rem + 2.5vw), 2rem);
+  padding: 1rem;
+  color: var(--white);
+  transition: var(--main-transition);
+}
+
+.creations-grid__card {
+  position: relative;
+}
+
+.creations-grid__card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: hsl(0, 0%, 90%);
+  opacity: 0;
+  transition: var(--long-transition);
+}
+
+.creations-grid__link {
+  outline-offset: 5px;
+  outline-color: red;
+  transition: var(--long-transition);
+}
+
+.creations-grid__image {
+  width: 100%;
+}
+
+.creations-grid__card:hover::after {
+  opacity: 0.7;
+}
+
+.creations-grid__card:hover .creations-grid__header {
+  color: black;
+  z-index: 100;
+}
