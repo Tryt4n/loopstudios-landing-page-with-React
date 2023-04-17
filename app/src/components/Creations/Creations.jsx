@@ -1,18 +1,38 @@
+import { useEffect } from "react";
 import "./Creations.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function Creations({ width, height }) {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <section className="creations">
       <header className="creations__heading">
-        <h2 className="creations__header">our creations</h2>
-        <button className="creations__btn">see all</button>
+        <h2
+          className="creations__header"
+          data-aos="fade-up"
+        >
+          our creations
+        </h2>
+        <button
+          className="creations__btn"
+          data-aos="fade-up"
+        >
+          see all
+        </button>
       </header>
 
       <div
         id="creations"
         className="creations-grid"
       >
-        <article className="creations-grid__card">
+        <article
+          className="creations-grid__card"
+          data-aos={width > 768 ? "zoom-in-right" : "fade-up"}
+        >
           <a
             href="#creations"
             className="creations-grid__link"
@@ -30,7 +50,10 @@ export default function Creations({ width, height }) {
           </a>
         </article>
 
-        <article className="creations-grid__card">
+        <article
+          className="creations-grid__card"
+          data-aos={width > 768 ? "zoom-in" : "fade-up"}
+        >
           <a
             href="#creations"
             className="creations-grid__link"
@@ -48,7 +71,10 @@ export default function Creations({ width, height }) {
           </a>
         </article>
 
-        <article className="creations-grid__card">
+        <article
+          className="creations-grid__card"
+          data-aos={width > 768 ? "zoom-in" : "fade-up"}
+        >
           <a
             href="#creations"
             className="creations-grid__link"
@@ -66,7 +92,10 @@ export default function Creations({ width, height }) {
           </a>
         </article>
 
-        <article className="creations-grid__card">
+        <article
+          className="creations-grid__card"
+          data-aos={width > 768 ? "zoom-in-left" : "fade-up"}
+        >
           <a
             href="#creations"
             className="creations-grid__link"
@@ -84,7 +113,10 @@ export default function Creations({ width, height }) {
           </a>
         </article>
 
-        <article className="creations-grid__card">
+        <article
+          className="creations-grid__card"
+          data-aos={width > 768 ? "zoom-in-right" : "fade-up"}
+        >
           <a
             href="#creations"
             className="creations-grid__link"
@@ -102,7 +134,10 @@ export default function Creations({ width, height }) {
           </a>
         </article>
 
-        <article className="creations-grid__card">
+        <article
+          className="creations-grid__card"
+          data-aos={width > 768 ? "zoom-in" : "fade-up"}
+        >
           <a
             href="#creations"
             className="creations-grid__link"
@@ -120,7 +155,10 @@ export default function Creations({ width, height }) {
           </a>
         </article>
 
-        <article className="creations-grid__card">
+        <article
+          className="creations-grid__card"
+          data-aos={width > 768 ? "zoom-in" : "fade-up"}
+        >
           <a
             href="#creations"
             className="creations-grid__link"
@@ -138,7 +176,10 @@ export default function Creations({ width, height }) {
           </a>
         </article>
 
-        <article className="creations-grid__card">
+        <article
+          className="creations-grid__card"
+          data-aos={width > 768 ? "zoom-in-left" : "fade-up"}
+        >
           <a
             href="#creations"
             className="creations-grid__link"

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import useWindowSize from "./hooks/useWindowsSize";
 
 import Header from "./components/Header/Header";
@@ -7,21 +8,28 @@ import "./App.css";
 
 export default function App() {
   const { width, height } = useWindowSize();
+  const [menuExpanded, setMenuExpanded] = useState(false);
 
   return (
     <>
       <Header
         width={width}
         height={height}
+        menuExpanded={menuExpanded}
+        setMenuExpanded={setMenuExpanded}
       />
-      <MainContent
-        width={width}
-        height={height}
-      />
-      <Footer
-        width={width}
-        height={height}
-      />
+      {!menuExpanded && (
+        <>
+          <MainContent
+            width={width}
+            height={height}
+          />
+          <Footer
+            width={width}
+            height={height}
+          />
+        </>
+      )}
     </>
   );
 }

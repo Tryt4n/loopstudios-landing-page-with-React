@@ -2,7 +2,7 @@ import Navbar from "../Navbar/Navbar";
 import NavbarMobile from "../Navbar/NavbarMobile";
 import "./Header.css";
 
-export default function Header({ width, height }) {
+export default function Header({ width, height, menuExpanded, setMenuExpanded }) {
   return (
     <header className="container header">
       <img
@@ -15,12 +15,12 @@ export default function Header({ width, height }) {
         className="header__background-image"
       />
       {width > 768 ? (
-        <Navbar
-          width={width}
-          height={height}
-        />
+        <Navbar />
       ) : (
-        <NavbarMobile />
+        <NavbarMobile
+          menuExpanded={menuExpanded}
+          setMenuExpanded={setMenuExpanded}
+        />
       )}
       <div className=" header-container">
         <h1 className="header-container__header">immersive experiences that deliver</h1>

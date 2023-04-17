@@ -1,16 +1,14 @@
-import { useState } from "react";
 import "./NavbarMobile.css";
 
-export default function NavbarMobile() {
-  const [menuExpanded, setMenuExpanded] = useState(false);
-
+export default function NavbarMobile({ menuExpanded, setMenuExpanded }) {
   return (
-    <nav className={menuExpanded && "expanded container"}>
+    <nav className={menuExpanded ? "expanded container" : ""}>
       <div className="nav-mobile__close-menu-wrapper">
         <a
           href="#"
           aria-label="homepage"
           title="Loopstudios"
+          tabIndex={2}
         >
           <img
             src="./src/assets/images/logo.svg"
@@ -36,6 +34,8 @@ export default function NavbarMobile() {
             aria-label="Close Navigation Menu"
             aria-controls="navigation-menu"
             aria-expanded={menuExpanded}
+            autoFocus
+            tabIndex={1}
             onClick={() => setMenuExpanded(false)}
           >
             <img
@@ -55,6 +55,7 @@ export default function NavbarMobile() {
             <a
               href="#"
               className="nav-mobile__link"
+              tabIndex={3}
             >
               About
             </a>
@@ -63,6 +64,7 @@ export default function NavbarMobile() {
             <a
               href="#"
               className="nav-mobile__link"
+              tabIndex={3}
             >
               Careers
             </a>
@@ -71,6 +73,7 @@ export default function NavbarMobile() {
             <a
               href="#"
               className="nav-mobile__link"
+              tabIndex={3}
             >
               Events
             </a>
@@ -79,6 +82,7 @@ export default function NavbarMobile() {
             <a
               href="#"
               className="nav-mobile__link"
+              tabIndex={3}
             >
               Products
             </a>
@@ -87,6 +91,7 @@ export default function NavbarMobile() {
             <a
               href="#"
               className="nav-mobile__link"
+              tabIndex={3}
             >
               Support
             </a>
