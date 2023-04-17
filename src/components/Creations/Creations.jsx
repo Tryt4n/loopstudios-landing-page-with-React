@@ -40,8 +40,8 @@ export default function Creations({ width, height }) {
             <img
               src={
                 width > 768
-                  ? "./src/assets/images/desktop/image-deep-earth.jpg"
-                  : "./src/assets/images/mobile/image-deep-earth.jpg"
+                  ? "./assets/images/desktop/image-deep-earth.jpg"
+                  : "./assets/images/mobile/image-deep-earth.jpg"
               }
               alt="Deep Earth"
               className="creations-grid__image"
@@ -61,8 +61,8 @@ export default function Creations({ width, height }) {
             <img
               src={
                 width > 768
-                  ? "./src/assets/images/desktop/image-night-arcade.jpg"
-                  : "./src/assets/images/mobile/image-night-arcade.jpg"
+                  ? "./assets/images/desktop/image-night-arcade.jpg"
+                  : "./assets/images/mobile/image-night-arcade.jpg"
               }
               alt="Night Arcade"
               className="creations-grid__image"
@@ -82,8 +82,8 @@ export default function Creations({ width, height }) {
             <img
               src={
                 width > 768
-                  ? "./src/assets/images/desktop/image-soccer-team.jpg"
-                  : "./src/assets/images/mobile/image-soccer-team.jpg"
+                  ? "./assets/images/desktop/image-soccer-team.jpg"
+                  : "./assets/images/mobile/image-soccer-team.jpg"
               }
               alt="Soccer team VR"
               className="creations-grid__image"
@@ -103,8 +103,8 @@ export default function Creations({ width, height }) {
             <img
               src={
                 width > 768
-                  ? "./src/assets/images/desktop/image-grid.jpg"
-                  : "./src/assets/images/mobile/image-grid.jpg"
+                  ? "./assets/images/desktop/image-grid.jpg"
+                  : "./assets/images/mobile/image-grid.jpg"
               }
               alt="The Grid"
               className="creations-grid__image"
@@ -124,8 +124,8 @@ export default function Creations({ width, height }) {
             <img
               src={
                 width > 768
-                  ? "./src/assets/images/desktop/image-from-above.jpg"
-                  : "./src/assets/images/mobile/image-from-above.jpg"
+                  ? "./assets/images/desktop/image-from-above.jpg"
+                  : "./assets/images/mobile/image-from-above.jpg"
               }
               alt="From up above VR"
               className="creations-grid__image"
@@ -145,8 +145,8 @@ export default function Creations({ width, height }) {
             <img
               src={
                 width > 768
-                  ? "./src/assets/images/desktop/image-pocket-borealis.jpg"
-                  : "./src/assets/images/mobile/image-pocket-borealis.jpg"
+                  ? "./assets/images/desktop/image-pocket-borealis.jpg"
+                  : "./assets/images/mobile/image-pocket-borealis.jpg"
               }
               alt="Pocket Borealis"
               className="creations-grid__image"
@@ -166,8 +166,8 @@ export default function Creations({ width, height }) {
             <img
               src={
                 width > 768
-                  ? "./src/assets/images/desktop/image-curiosity.jpg"
-                  : "./src/assets/images/mobile/image-curiosity.jpg"
+                  ? "./assets/images/desktop/image-curiosity.jpg"
+                  : "./assets/images/mobile/image-curiosity.jpg"
               }
               alt="The curiosity"
               className="creations-grid__image"
@@ -187,8 +187,8 @@ export default function Creations({ width, height }) {
             <img
               src={
                 width > 768
-                  ? "./src/assets/images/desktop/image-fisheye.jpg"
-                  : "./src/assets/images/mobile/image-fisheye.jpg"
+                  ? "./assets/images/desktop/image-fisheye.jpg"
+                  : "./assets/images/mobile/image-fisheye.jpg"
               }
               alt="Make it fisheye"
               className="creations-grid__image"

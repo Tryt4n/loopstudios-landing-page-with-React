@@ -31,7 +31,7 @@ export default function Footer({ width, height }) {
                   className="social-media-list__link"
                 >
                   <img
-                    src="./src/assets/images/icon-facebook.svg"
+                    src="./assets/images/icon-facebook.svg"
                     alt="facebook logo"
                   />
                 </a>
@@ -44,7 +44,7 @@ export default function Footer({ width, height }) {
                   className="social-media-list__link"
                 >
                   <img
-                    src="./src/assets/images/icon-twitter.svg"
+                    src="./assets/images/icon-twitter.svg"
                     alt="twitter logo"
                   />
                 </a>
@@ -57,7 +57,7 @@ export default function Footer({ width, height }) {
                   className="social-media-list__link"
                 >
                   <img
-                    src="./src/assets/images/icon-pinterest.svg"
+                    src="./assets/images/icon-pinterest.svg"
                     alt="pinterest logo"
                   />
                 </a>
@@ -70,7 +70,7 @@ export default function Footer({ width, height }) {
                   className="social-media-list__link"
                 >
                   <img
-                    src="./src/assets/images/icon-instagram.svg"
+                    src="./assets/images/icon-instagram.svg"
                     alt="instagram logo"
                   />
                 </a>

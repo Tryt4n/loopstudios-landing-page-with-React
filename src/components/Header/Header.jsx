@@ -8,8 +8,8 @@ export default function Header({ width, height, menuExpanded, setMenuExpanded })
       <img
         src={
           width > 1024 || width > height
-            ? "/assets/images/desktop/image-hero.jpg"
-            : "/assets/images/mobile/image-hero.jpg"
+            ? "./assets/images/desktop/image-hero.jpg"
+            : "./assets/images/mobile/image-hero.jpg"
         }
         alt="hero image"
         className="header__background-image"

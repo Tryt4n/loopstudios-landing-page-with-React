@@ -9,7 +9,7 @@ export default function Navbar() {
         title="Loopstudios"
       >
         <img
-          src="./src/assets/images/logo.svg"
+          src="./assets/images/logo.svg"
           alt="Loopstudios logo"
         />
       </a>

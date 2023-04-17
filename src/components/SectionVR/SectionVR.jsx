@@ -6,8 +6,8 @@ export default function SectionVR({ width, height }) {
       <img
         src={
           width > 891
-            ? "./src/assets/images/desktop/image-interactive.jpg"
-            : "./src/assets/images/mobile/image-interactive.jpg"
+            ? "./assets/images/desktop/image-interactive.jpg"
+            : "./assets/images/mobile/image-interactive.jpg"
         }
         alt="men playing VR game"
         className="sectionVR__image"

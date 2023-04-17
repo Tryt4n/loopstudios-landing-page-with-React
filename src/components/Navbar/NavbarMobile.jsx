@@ -11,7 +11,7 @@ export default function NavbarMobile({ menuExpanded, setMenuExpanded }) {
           tabIndex={2}
         >
           <img
-            src="./src/assets/images/logo.svg"
+            src="./assets/images/logo.svg"
             alt="Loopstudios logo"
           />
         </a>
@@ -24,7 +24,7 @@ export default function NavbarMobile({ menuExpanded, setMenuExpanded }) {
             onClick={() => setMenuExpanded(true)}
           >
             <img
-              src="./src/assets/images/icon-hamburger.svg"
+              src="./assets/images/icon-hamburger.svg"
               alt="Opening Button"
             />
           </button>
@@ -39,7 +39,7 @@ export default function NavbarMobile({ menuExpanded, setMenuExpanded }) {
             onClick={() => setMenuExpanded(false)}
           >
             <img
-              src="./src/assets/images/icon-close.svg"
+              src="./assets/images/icon-close.svg"
               alt="Closing Button"
             />
           </button>
