@@ -2,13 +2,19 @@ import "./NavbarMobile.css";
 
 export default function NavbarMobile({ menuExpanded, setMenuExpanded }) {
   return (
-    <nav className={menuExpanded ? "expanded container" : ""}>
+    <nav
+      className={menuExpanded ? "expanded container" : ""}
+      data-aos={menuExpanded ? "zoom-in" : ""}
+      data-aos-duration="500"
+    >
       <div className="nav-mobile__close-menu-wrapper">
         <a
           href="#"
           aria-label="homepage"
           title="Loopstudios"
           tabIndex={2}
+          data-aos={menuExpanded ? "flip-left" : "fade-right"}
+          data-aos-delay={menuExpanded ? "500" : ""}
         >
           <img
             src="./assets/images/logo.svg"
@@ -22,6 +28,7 @@ export default function NavbarMobile({ menuExpanded, setMenuExpanded }) {
             aria-controls="navigation-menu"
             aria-expanded={menuExpanded}
             onClick={() => setMenuExpanded(true)}
+            data-aos="fade-left"
           >
             <img
               src="./assets/images/icon-hamburger.svg"
@@ -37,6 +44,8 @@ export default function NavbarMobile({ menuExpanded, setMenuExpanded }) {
             autoFocus
             tabIndex={1}
             onClick={() => setMenuExpanded(false)}
+            data-aos="flip-right"
+            data-aos-delay="500"
           >
             <img
               src="./assets/images/icon-close.svg"
@@ -56,6 +65,8 @@ export default function NavbarMobile({ menuExpanded, setMenuExpanded }) {
               href="#"
               className="nav-mobile__link"
               tabIndex={3}
+              data-aos="zoom-in"
+              data-aos-delay="600"
             >
               About
             </a>
@@ -65,6 +76,8 @@ export default function NavbarMobile({ menuExpanded, setMenuExpanded }) {
               href="#"
               className="nav-mobile__link"
               tabIndex={3}
+              data-aos="zoom-in"
+              data-aos-delay="700"
             >
               Careers
             </a>
@@ -74,6 +87,8 @@ export default function NavbarMobile({ menuExpanded, setMenuExpanded }) {
               href="#"
               className="nav-mobile__link"
               tabIndex={3}
+              data-aos="zoom-in"
+              data-aos-delay="800"
             >
               Events
             </a>
@@ -83,6 +98,8 @@ export default function NavbarMobile({ menuExpanded, setMenuExpanded }) {
               href="#"
               className="nav-mobile__link"
               tabIndex={3}
+              data-aos="zoom-in"
+              data-aos-delay="900"
             >
               Products
             </a>
@@ -92,6 +109,8 @@ export default function NavbarMobile({ menuExpanded, setMenuExpanded }) {
               href="#"
               className="nav-mobile__link"
               tabIndex={3}
+              data-aos="zoom-in"
+              data-aos-delay="1000"
             >
               Support
             </a>

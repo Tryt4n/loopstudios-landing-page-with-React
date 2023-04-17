@@ -5,7 +5,10 @@ export default function Footer({ width, height }) {
   const date = new Date().getFullYear();
 
   return (
-    <div className="bg-dark">
+    <div
+      className="bg-dark"
+      data-aos={width > 768 ? "zoom-in" : ""}
+    >
       <footer
         id="footer"
         className="container footer"
@@ -21,7 +24,10 @@ export default function Footer({ width, height }) {
         </div>
 
         <div className="footer__social-media-wrapper">
-          <nav aria-label="social media navigation">
+          <nav
+            aria-label="social media navigation"
+            data-aos={width <= 768 ? "fade-up" : ""}
+          >
             <ul className="social-media-list">
               <li>
                 <a
@@ -77,7 +83,10 @@ export default function Footer({ width, height }) {
               </li>
             </ul>
           </nav>
-          <small className="footer__copyright-text">
+          <small
+            className="footer__copyright-text"
+            data-aos={width <= 768 ? "fade-up" : ""}
+          >
             &copy; <time dateTime={date}>{date}</time> Loopstudios. All rights reserved.
           </small>
         </div>

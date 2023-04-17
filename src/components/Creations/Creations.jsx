@@ -1,13 +1,6 @@
-import { useEffect } from "react";
 import "./Creations.css";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 export default function Creations({ width, height }) {
-  useEffect(() => {
-    Aos.init();
-  }, []);
-
   return (
     <section className="creations">
       <header className="creations__heading">
@@ -32,6 +25,8 @@ export default function Creations({ width, height }) {
         <article
           className="creations-grid__card"
           data-aos={width > 768 ? "zoom-in-right" : "fade-up"}
+          data-aos-delay={width > 768 ? "250" : ""}
+          data-aos-duration="1000"
         >
           <a
             href="#creations"
@@ -53,6 +48,8 @@ export default function Creations({ width, height }) {
         <article
           className="creations-grid__card"
           data-aos={width > 768 ? "zoom-in" : "fade-up"}
+          data-aos-delay={width > 768 ? "400" : ""}
+          data-aos-duration="1000"
         >
           <a
             href="#creations"
@@ -74,6 +71,8 @@ export default function Creations({ width, height }) {
         <article
           className="creations-grid__card"
           data-aos={width > 768 ? "zoom-in" : "fade-up"}
+          data-aos-delay={width > 768 ? "550" : ""}
+          data-aos-duration="1000"
         >
           <a
             href="#creations"
@@ -95,6 +94,8 @@ export default function Creations({ width, height }) {
         <article
           className="creations-grid__card"
           data-aos={width > 768 ? "zoom-in-left" : "fade-up"}
+          data-aos-delay={width > 768 ? "700" : ""}
+          data-aos-duration="1000"
         >
           <a
             href="#creations"
@@ -116,6 +117,8 @@ export default function Creations({ width, height }) {
         <article
           className="creations-grid__card"
           data-aos={width > 768 ? "zoom-in-right" : "fade-up"}
+          data-aos-delay={width > 768 ? "850" : ""}
+          data-aos-duration="1000"
         >
           <a
             href="#creations"
@@ -137,6 +140,8 @@ export default function Creations({ width, height }) {
         <article
           className="creations-grid__card"
           data-aos={width > 768 ? "zoom-in" : "fade-up"}
+          data-aos-delay={width > 768 ? "1000" : ""}
+          data-aos-duration="1000"
         >
           <a
             href="#creations"
@@ -158,6 +163,8 @@ export default function Creations({ width, height }) {
         <article
           className="creations-grid__card"
           data-aos={width > 768 ? "zoom-in" : "fade-up"}
+          data-aos-delay={width > 768 ? "1150" : ""}
+          data-aos-duration="1000"
         >
           <a
             href="#creations"
@@ -179,6 +186,8 @@ export default function Creations({ width, height }) {
         <article
           className="creations-grid__card"
           data-aos={width > 768 ? "zoom-in-left" : "fade-up"}
+          data-aos-delay={width > 768 ? "1300" : ""}
+          data-aos-duration="1000"
         >
           <a
             href="#creations"

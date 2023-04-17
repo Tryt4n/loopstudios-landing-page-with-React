@@ -1,12 +1,14 @@
 import "./Navbar.css";
 
-export default function Navbar() {
+export default function Navbar({ width }) {
   return (
     <nav className="nav">
       <a
         href="#"
         aria-label="homepage"
         title="Loopstudios"
+        data-aos={width > 768 ? "zoom-in-down" : "fade-up"}
+        data-aos-duration={width > 768 ? "500" : ""}
       >
         <img
           src="./assets/images/logo.svg"
@@ -14,11 +16,16 @@ export default function Navbar() {
         />
       </a>
 
-      <ul className="nav__list">
+      <ul
+        className="nav__list"
+        data-aos={width <= 768 ? "zoom-in-down" : ""}
+        data-aos-duration={width > 768 ? "500" : ""}
+      >
         <li className="nav__list-item">
           <a
             href="#"
             className="nav__link"
+            data-aos={width <= 768 ? "fade-up" : ""}
           >
             About
           </a>
@@ -27,6 +34,7 @@ export default function Navbar() {
           <a
             href="#"
             className="nav__link"
+            data-aos={width <= 768 ? "fade-up" : ""}
           >
             Careers
           </a>
@@ -35,6 +43,7 @@ export default function Navbar() {
           <a
             href="#"
             className="nav__link"
+            data-aos={width <= 768 ? "fade-up" : ""}
           >
             Events
           </a>
@@ -43,6 +52,7 @@ export default function Navbar() {
           <a
             href="#"
             className="nav__link"
+            data-aos={width <= 768 ? "fade-up" : ""}
           >
             Products
           </a>
@@ -51,6 +61,7 @@ export default function Navbar() {
           <a
             href="#"
             className="nav__link"
+            data-aos={width <= 768 ? "fade-up" : ""}
           >
             Support
           </a>

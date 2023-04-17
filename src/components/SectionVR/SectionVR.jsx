@@ -11,10 +11,24 @@ export default function SectionVR({ width, height }) {
         }
         alt="men playing VR game"
         className="sectionVR__image"
+        data-aos="zoom-in-down"
+        data-duration="500"
       />
       <div className="sectionVR__text-container">
-        <h2 className="sectionVR__header">the leader in interactive VR</h2>
-        <p className="sectionVR__text">
+        <h2
+          className="sectionVR__header"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-delay="500"
+        >
+          the leader in interactive VR
+        </h2>
+        <p
+          className="sectionVR__text"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-delay="500"
+        >
           Founded in 2011, Loopstudios has been producing world-class virtual reality projects for
           some of the best companies around the globe. Our award-winning creations have transformed
           businesses through digital experiences that bind to their brand.
