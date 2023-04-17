@@ -38,7 +38,7 @@ export default function Creations({ width, height }) {
                   ? "./assets/images/desktop/image-deep-earth.jpg"
                   : "./assets/images/mobile/image-deep-earth.jpg"
               }
-              alt="Deep Earth"
+              alt=""
               className="creations-grid__image"
             />
             <h3 className="creations-grid__header">deep earth</h3>
@@ -61,7 +61,7 @@ export default function Creations({ width, height }) {
                   ? "./assets/images/desktop/image-night-arcade.jpg"
                   : "./assets/images/mobile/image-night-arcade.jpg"
               }
-              alt="Night Arcade"
+              alt=""
               className="creations-grid__image"
             />
             <h3 className="creations-grid__header">night arcade</h3>
@@ -84,7 +84,7 @@ export default function Creations({ width, height }) {
                   ? "./assets/images/desktop/image-soccer-team.jpg"
                   : "./assets/images/mobile/image-soccer-team.jpg"
               }
-              alt="Soccer team VR"
+              alt=""
               className="creations-grid__image"
             />
             <h3 className="creations-grid__header">soccer team vr</h3>
@@ -107,7 +107,7 @@ export default function Creations({ width, height }) {
                   ? "./assets/images/desktop/image-grid.jpg"
                   : "./assets/images/mobile/image-grid.jpg"
               }
-              alt="The Grid"
+              alt=""
               className="creations-grid__image"
             />
             <h3 className="creations-grid__header">the grid</h3>
@@ -130,7 +130,7 @@ export default function Creations({ width, height }) {
                   ? "./assets/images/desktop/image-from-above.jpg"
                   : "./assets/images/mobile/image-from-above.jpg"
               }
-              alt="From up above VR"
+              alt=""
               className="creations-grid__image"
             />
             <h3 className="creations-grid__header">from up above vr</h3>
@@ -153,7 +153,7 @@ export default function Creations({ width, height }) {
                   ? "./assets/images/desktop/image-pocket-borealis.jpg"
                   : "./assets/images/mobile/image-pocket-borealis.jpg"
               }
-              alt="Pocket Borealis"
+              alt=""
               className="creations-grid__image"
             />
             <h3 className="creations-grid__header">pocket borealis</h3>
@@ -176,7 +176,7 @@ export default function Creations({ width, height }) {
                   ? "./assets/images/desktop/image-curiosity.jpg"
                   : "./assets/images/mobile/image-curiosity.jpg"
               }
-              alt="The curiosity"
+              alt=""
               className="creations-grid__image"
             />
             <h3 className="creations-grid__header">the curiosity</h3>
@@ -199,7 +199,7 @@ export default function Creations({ width, height }) {
                   ? "./assets/images/desktop/image-fisheye.jpg"
                   : "./assets/images/mobile/image-fisheye.jpg"
               }
-              alt="Make it fisheye"
+              alt=""
               className="creations-grid__image"
             />
             <h3 className="creations-grid__header">make it fisheye</h3>
