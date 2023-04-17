@@ -1,11 +1,11 @@
 import Navbar from "../Navbar/Navbar";
 import "./Footer.css";
 
-export default function Footer() {
+export default function Footer({ width, height }) {
   const date = new Date().getFullYear();
 
   return (
-    <div className="background-color">
+    <div className="bg-dark">
       <footer
         id="footer"
         className="container footer"
@@ -14,7 +14,10 @@ export default function Footer() {
           className="footer__navigation"
           aria-label="footer-navigation"
         >
-          <Navbar />
+          <Navbar
+            width={width}
+            height={height}
+          />
         </div>
 
         <div className="footer__social-media-wrapper">
@@ -24,6 +27,7 @@ export default function Footer() {
                 <a
                   href="#footer"
                   aria-label="Go to our facebook"
+                  title="Facebook"
                   className="social-media-list__link"
                 >
                   <img
@@ -36,6 +40,7 @@ export default function Footer() {
                 <a
                   href="#footer"
                   aria-label="Go to our twitter"
+                  title="Twitter"
                   className="social-media-list__link"
                 >
                   <img
@@ -48,6 +53,7 @@ export default function Footer() {
                 <a
                   href="#footer"
                   aria-label="Go to our pinterest"
+                  title="Pinterest"
                   className="social-media-list__link"
                 >
                   <img
@@ -60,6 +66,7 @@ export default function Footer() {
                 <a
                   href="#footer"
                   aria-label="Go to our instagram"
+                  title="Instagram"
                   className="social-media-list__link"
                 >
                   <img
@@ -70,7 +77,9 @@ export default function Footer() {
               </li>
             </ul>
           </nav>
-          <small>&copy; {date} Loopstudios. All rights reserved.</small>
+          <small className="footer__copyright-text">
+            &copy; <time dateTime={date}>{date}</time> Loopstudios. All rights reserved.
+          </small>
         </div>
       </footer>
     </div>

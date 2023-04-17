@@ -80,8 +80,20 @@ img {
   padding-inline: 6rem;
 }
 
-@media (width > 120rem) {
+@media (width <= 891px) {
   .container {
-    max-width: 140rem;
+    padding-inline: 3rem;
+  }
+}
+
+@media (width <= 768px) {
+  .container {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media (width <= 480px) {
+  .container {
+    padding-inline: 1rem;
   }
 }

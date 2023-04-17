@@ -1,4 +1,4 @@
-.background-color {
+.bg-dark {
   background: var(--black);
 }
 
@@ -6,7 +6,8 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding-block: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   background: transparent;
   color: white;
 }
@@ -48,4 +49,34 @@
 
 .social-media-list__link:hover.social-media-list__link::after {
   background: var(--white);
+}
+
+.footer__copyright-text {
+  color: var(--very-dark-gray);
+}
+
+@media (width <= 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .footer .nav {
+    align-items: center;
+  }
+
+  .footer .nav__list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+    padding-top: 3rem;
+  }
+
+  .footer__social-media-wrapper {
+    align-items: center;
+  }
 }

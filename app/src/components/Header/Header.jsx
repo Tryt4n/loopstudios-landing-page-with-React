@@ -1,15 +1,27 @@
 import Navbar from "../Navbar/Navbar";
+import NavbarMobile from "../Navbar/NavbarMobile";
 import "./Header.css";
 
-export default function Header() {
+export default function Header({ width, height }) {
   return (
     <header className="container header">
       <img
-        src="/src/assets/images/desktop/image-hero.jpg"
+        src={
+          width > 1024 || width > height
+            ? "/src/assets/images/desktop/image-hero.jpg"
+            : "/src/assets/images/mobile/image-hero.jpg"
+        }
         alt="hero image"
         className="header__background-image"
       />
-      <Navbar />
+      {width > 768 ? (
+        <Navbar
+          width={width}
+          height={height}
+        />
+      ) : (
+        <NavbarMobile />
+      )}
       <div className=" header-container">
         <h1 className="header-container__header">immersive experiences that deliver</h1>
       </div>

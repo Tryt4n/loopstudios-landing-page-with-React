@@ -1,15 +1,16 @@
 import "./Navbar.css";
 
-export default function Navbar() {
+export default function Navbar({ width, height }) {
   return (
     <nav className="nav">
       <a
         href="#"
         aria-label="homepage"
+        title="Loopstudios"
       >
         <img
           src="./src/assets/images/logo.svg"
-          alt="LoopStudios logo"
+          alt="Loopstudios logo"
         />
       </a>
 

@@ -1,10 +1,14 @@
 import "./SectionVR.css";
 
-export default function SectionVR() {
+export default function SectionVR({ width, height }) {
   return (
     <section className="sectionVR">
       <img
-        src="./src/assets/images/desktop/image-interactive.jpg"
+        src={
+          width > 891
+            ? "./src/assets/images/desktop/image-interactive.jpg"
+            : "./src/assets/images/mobile/image-interactive.jpg"
+        }
         alt="men playing VR game"
         className="sectionVR__image"
       />
