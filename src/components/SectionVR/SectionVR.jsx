@@ -19,7 +19,7 @@ export default function SectionVR({ width, height }) {
           className="sectionVR__header"
           data-aos="zoom-in"
           data-aos-duration="1000"
-          data-delay="500"
+          data-delay={width > 891 ? "1000" : "500"}
         >
           the leader in interactive VR
         </h2>
@@ -27,7 +27,7 @@ export default function SectionVR({ width, height }) {
           className="sectionVR__text"
           data-aos="zoom-in"
           data-aos-duration="1000"
-          data-delay="500"
+          data-delay={width > 891 ? "1000" : "500"}
         >
           Founded in 2011, Loopstudios has been producing world-class virtual reality projects for
           some of the best companies around the globe. Our award-winning creations have transformed

@@ -7,7 +7,7 @@ export default function Navbar({ width }) {
         href="#"
         aria-label="homepage"
         title="Loopstudios"
-        data-aos={width > 768 ? "zoom-in-down" : "fade-up"}
+        data-aos={width > 768 ? "zoom-in-down" : "fade-down"}
         data-aos-duration={width > 768 ? "500" : ""}
       >
         <img
@@ -18,7 +18,7 @@ export default function Navbar({ width }) {
 
       <ul
         className="nav__list"
-        data-aos={width <= 768 ? "zoom-in-down" : ""}
+        data-aos={width <= 768 ? "zoom-in-down" : "fade-down"}
         data-aos-duration={width > 768 ? "500" : ""}
       >
         <li className="nav__list-item">

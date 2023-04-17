@@ -5,7 +5,7 @@ export default function NavbarMobile({ menuExpanded, setMenuExpanded }) {
     <nav
       className={menuExpanded ? "expanded container" : ""}
       data-aos={menuExpanded ? "zoom-in" : ""}
-      data-aos-duration="500"
+      data-aos-duration={menuExpanded ? "500" : ""}
     >
       <div className="nav-mobile__close-menu-wrapper">
         <a
