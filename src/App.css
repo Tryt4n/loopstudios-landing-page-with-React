@@ -1,15 +1,15 @@
 @font-face {
   font-family: "Josefin Sans";
   font-weight: normal;
-  src: url("./assets/fonts/josefinsans-light-webfont.woff2") format("woff2"),
-    url("./assets/fonts/josefinsans-light-webfont.woff") format("woff");
+  src: url("./fonts/josefinsans-light-webfont.woff2") format("woff2"),
+    url("./fonts/josefinsans-light-webfont.woff") format("woff");
 }
 
 @font-face {
   font-family: "Alata";
   font-weight: normal;
-  src: url("./assets/fonts/alata-regular-webfont.woff2") format("woff2"),
-    url("./assets/fonts/alata-regular-webfont.woff") format("woff");
+  src: url("./fonts/alata-regular-webfont.woff2") format("woff2"),
+    url("./fonts/alata-regular-webfont.woff") format("woff");
 }
 
 :root {
