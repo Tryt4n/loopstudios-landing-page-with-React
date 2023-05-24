@@ -1,5 +1,7 @@
 # Frontend Mentor - Loopstudios landing page
 
+[Link to the page](https://loopstudios-landing-page-with-react.netlify.app/)
+
 ![Design preview for the Loopstudios landing page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
